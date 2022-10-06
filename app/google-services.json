@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054070687099",
+    "project_id": "meiirzhanapp",
+    "storage_bucket": "meiirzhanapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054070687099:android:f84c039f24d1c8b667e9de",
+        "android_client_info": {
+          "package_name": "com.example.meiirzhanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054070687099-flhafk6vu6p5rc1dbgtohi367g3m2ncl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPDJmN3mJdEJ7ka4oxUU5KHqqjMyTfajc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054070687099-flhafk6vu6p5rc1dbgtohi367g3m2ncl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
