@@ -1,17 +1,25 @@
 package com.example.meiirzhanapp;
 
-import java.sql.Connection;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Database {
-    private final String LOG = "DEBUG";
-    private Connection connection;
-    private final String classs = "net.sourceforge.jtds.jdbc.Driver";
-    public void connectionCl() {
-        String ip = "192.168.1.9";
-        String userName = "medData";
-        String database = "drugs";
-        String password = "5781757817";
-        String port = "1433";
+
+    public boolean connectionCl(user u) {
+        FirebaseDatabase rootNode;
+        DatabaseReference reference;
+
+        rootNode = FirebaseDatabase.getInstance();
+        reference = rootNode.getReference("userInfo");
+
+        String uniqueKey = reference.push().getKey();//to get unique Key
+
+        if(uniqueKey == null){
+            return false;
+        }
+        reference.setValue(u);
+        System.out.println("error occured");
+        return true;
     }
 
 

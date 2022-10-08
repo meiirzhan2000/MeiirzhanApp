@@ -1,9 +1,7 @@
 package com.example.meiirzhanapp;
 
 import android.content.Context;
-import android.provider.ContactsContract;
 
-import java.sql.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,7 +9,6 @@ public class user {
     private String firstName;
     private String secondName;
     private String password;
-    private String confirmPassword;
 
     public String getSecondName() {
         return secondName.replaceAll("\\s", "");
@@ -19,10 +16,6 @@ public class user {
 
     public String getPassword() {
         return password;
-    }
-
-    public String getConfirmPassword() {
-        return confirmPassword;
     }
 
     public String getEmail() {
@@ -39,11 +32,13 @@ public class user {
     private String email;
     private String phone;
 
-    public user(String firstName, String secondName, String password, String email, String confirmPassword){
+    public user(){}
+    //Empty constructor to avoid errors
+
+    public user(String email, String firstName, String password, String secondName){
         this.firstName = firstName;
         this.secondName = secondName;
         this.password = password;
-        this.confirmPassword = confirmPassword;
         this.email = email;
     }
 
